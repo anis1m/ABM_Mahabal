@@ -1,0 +1,16 @@
+<div class="goals">
+  <h1>
+    Track a million moving parts <br />
+    without breaking a sweat
+  </h1>
+
+  <div>
+    @for (item of titles; track $index) {
+    <app-card
+      [title]="item"
+      [description]="descriptions[$index]"
+      [image]="images[$index]"
+    ></app-card>
+    }
+  </div>
+</div>

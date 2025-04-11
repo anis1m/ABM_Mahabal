@@ -1,0 +1,44 @@
+.features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  padding: 4rem 0;
+}
+
+.features h1 {
+  font-size: 3.3rem;
+  text-align: center;
+}
+
+.features aside {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  width: 50%;
+}
+
+.features aside blockquote h1 {
+  font-size: 2.2rem;
+  text-align: left;
+}
+
+.features aside blockquote p {
+  font-size: 1.1rem;
+  line-height: 2cap;
+}
+
+.features aside blockquote {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.features mark {
+  color: green;
+  background-color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+}

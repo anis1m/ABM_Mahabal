@@ -1,0 +1,60 @@
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  margin: 5rem 0;
+}
+
+.hero div {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.hero div aside {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero div aside h1:nth-child(1) {
+  font-size: 3.5rem;
+}
+
+.hero div aside h1:nth-child(2) {
+  font-size: 2.2rem;
+}
+
+.hero div aside blockquote {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero div aside blockquote button {
+  border: 2px solid green;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.7rem 2rem;
+}
+
+.hero div aside blockquote button:nth-child(1) {
+  background-color: green;
+  color: white;
+}
+
+.hero div aside blockquote button:nth-child(2) {
+  background-color: white;
+  color: green;
+}
+
+.hero div p {
+  font-size: 1.2rem;
+}
