@@ -42,3 +42,9 @@
   font-size: 1.2rem;
   font-weight: 600;
 }
+
+@media (max-width: 1400px) {
+  .features aside {
+    width: 70%;
+  }
+}
