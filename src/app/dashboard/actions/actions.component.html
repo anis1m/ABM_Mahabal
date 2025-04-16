@@ -1,0 +1,45 @@
+<section class="dashboard-actions">
+  <blockquote>
+    <i class="fa-solid fa-building"></i>
+    <h1>ABM Group</h1>
+    <i class="fa-solid fa-gear"></i>
+  </blockquote>
+  <h3>Get started with your new Backlog Space!</h3>
+  <div>
+    <aside>
+      <i class="fa-solid fa-database"></i>
+      <blockquote>
+        <h3>Add Project</h3>
+        <p>First, add a project that you would like to work on</p>
+        <button (click)="setshowAddProject(true)">Add</button>
+      </blockquote>
+    </aside>
+    <aside>
+      <i class="fa-solid fa-circle-user"></i>
+      <blockquote>
+        <h3>Add User</h3>
+        <p>Invite members to this Space to work on your projects with you</p>
+        <button>Add</button>
+      </blockquote>
+    </aside>
+    <aside>
+      <i class="fa-solid fa-list-ul"></i>
+      <blockquote>
+        <h3>Add Issue</h3>
+        <p>Add an issue related to project</p>
+        <button (click)="setshowAddIssue(true)">Add</button>
+      </blockquote>
+    </aside>
+  </div>
+  <app-add-project
+    *ngIf="showAddProject"
+    (close)="setshowAddProject(false)"
+    [projectData]="projectData"
+  ></app-add-project>
+
+  <app-add-users *ngIf="showAddUser"></app-add-users>
+  <app-add-issues
+    *ngIf="showAddIssue"
+    (close)="setshowAddIssue(false)"
+  ></app-add-issues>
+</section>

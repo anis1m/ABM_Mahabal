@@ -1,0 +1,22 @@
+<div class="add-issues">
+  <form>
+    <h2>Add Issue</h2>
+    <blockquote>
+      <label>Project Name</label>
+      <input type="text" placeholder="Enter Project Name" />
+    </blockquote>
+    <blockquote>
+      <label>Subject</label>
+      <input type="text" placeholder="Enter Subject" />
+    </blockquote>
+    <blockquote>
+      <label>Description</label>
+      <textarea
+        rows="5"
+        placeholder="Enter Brief Description about Issue"
+      ></textarea>
+    </blockquote>
+    <button type="submit">Add Issue</button>
+    <i class="fa-solid fa-xmark" (click)="onCancel()"></i>
+  </form>
+</div>

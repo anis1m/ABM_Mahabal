@@ -5,8 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
 })
-export class NavbarComponent {
-  redirect(): void {
-    window.location.href = 'https://nulab-demo.vercel.app/';
-  }
-}
+export class NavbarComponent {}
